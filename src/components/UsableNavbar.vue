@@ -1,0 +1,103 @@
+<template>
+  <v-layout align-center class="navbar">
+    <v-flex xs8>
+      <router-link to="/">
+        <img class="logo" @click="toHomeStyles" src="../assets/usable_logo.svg" alt="Usable Logo">
+      </router-link>
+    </v-flex>
+
+    <v-flex xs4 class="text-xs-right">
+      <router-link to="/contact-us">
+        <span class="font-weight-bold title contact" @click="leaveHomeStyles">CONTACT US</span>
+      </router-link>
+      <span class="font-weight-bold title contact" > | </span>
+            <router-link to="/related">
+        <span class="font-weight-bold title contact" @click="leaveHomeStyles">RELATED</span>
+      </router-link>
+    </v-flex>
+  </v-layout>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      dialog: false,
+      checkbox: false,
+      email: "",
+      password: ""
+    };
+  },
+  methods: {
+    toHomeStyles() {
+      document.querySelector("#usable-home").style.backgroundImage =
+        "url(/img/background.27769967.png)";
+    },
+    leaveHomeStyles() {
+      document.querySelector("#usable-home").style.backgroundImage = "none";
+      document.querySelector("#usable-home").style.backgroundColor = "#fff";
+      document.querySelector(".navbar").style.backgroundImage =
+        "url(/img/background.27769967.png)";
+      document.querySelector(".navbar").style.backgroundSize = "cover";
+    }
+  }
+};
+</script>
+
+<style scoped>
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  padding: 24px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.login,
+.contact {
+  cursor: pointer;
+}
+
+.login:hover,
+.contact:hover,
+.forgot:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+/* input {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    background: #455A64;
+    margin: 10px 0px;
+  } */
+
+::placeholder {
+  color: #fff;
+}
+
+.or {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin: 15px 0;
+}
+
+/* .or::before, .or::after {
+    position: absolute; 
+    width: 35%;
+    height: 1px;
+    top: 60%;
+    background-color: #fff;
+    content: '';
+  } */
+</style>
+
