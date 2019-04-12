@@ -45,8 +45,5 @@ export default {
 /* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
-.navbar{
-  background-image: url('/img/background.27769967.png');
-  background-size: cover;
-}
+
 </style>

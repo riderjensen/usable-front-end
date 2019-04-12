@@ -62,5 +62,9 @@ a {
   position: relative;
   margin: 15px 0;
 }
+.navbar{
+  background-color: #000;
+  background-size: cover;
+}
 </style>
 
