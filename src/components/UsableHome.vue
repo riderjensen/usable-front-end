@@ -127,8 +127,9 @@ export default {
           this.iconShow = false;
           document.querySelector("#usable-home").style.filter =
             "brightness(100%)";
+            let string = '<script src="'+resp.data.url+'" id="usable"><\/script>'
           this.dialog = true;
-          this.returnedURL = resp.data.url;
+          this.returnedURL = string;
         });
     },
     deleteTask(e) {
