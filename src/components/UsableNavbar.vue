@@ -52,17 +52,6 @@ a {
   color: #00bcd4;
   cursor: pointer;
 }
-
-/* input {
-    border: 1px solid white;
-    border-radius: 20px;
-    color: white;
-    padding: 10px 20px;
-    width: 100%;
-    background: #455A64;
-    margin: 10px 0px;
-  } */
-
 ::placeholder {
   color: #fff;
 }
@@ -73,14 +62,5 @@ a {
   position: relative;
   margin: 15px 0;
 }
-
-/* .or::before, .or::after {
-    position: absolute; 
-    width: 35%;
-    height: 1px;
-    top: 60%;
-    background-color: #fff;
-    content: '';
-  } */
 </style>
 

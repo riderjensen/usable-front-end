@@ -122,7 +122,7 @@ export default {
       this.copied = false;
       document.querySelector("#usable-home").style.filter = "brightness(50%)";
       axios
-        .post("http://165.22.130.92", {questionArray: this.taskArray})
+        .post("https://intense-plains-47179.herokuapp.com", {questionArray: this.taskArray})
         .then(resp => {
           this.iconShow = false;
           document.querySelector("#usable-home").style.filter =
