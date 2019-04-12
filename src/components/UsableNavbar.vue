@@ -2,17 +2,13 @@
   <v-layout align-center class="navbar">
     <v-flex xs8>
       <router-link to="/">
-        <img class="logo" @click="toHomeStyles" src="../assets/usable_logo.svg" alt="Usable Logo">
+        <img class="logo" src="../assets/usable_logo.svg" alt="Usable Logo">
       </router-link>
     </v-flex>
 
     <v-flex xs4 class="text-xs-right">
-      <router-link to="/contact-us">
-        <span class="font-weight-bold title contact" @click="leaveHomeStyles">CONTACT US</span>
-      </router-link>
-      <span class="font-weight-bold title contact" > | </span>
-            <router-link to="/related">
-        <span class="font-weight-bold title contact" @click="leaveHomeStyles">RELATED</span>
+      <router-link to="/related">
+        <span class="font-weight-bold title contact">RELATED</span>
       </router-link>
     </v-flex>
   </v-layout>
@@ -27,19 +23,6 @@ export default {
       email: "",
       password: ""
     };
-  },
-  methods: {
-    toHomeStyles() {
-      document.querySelector("#usable-home").style.backgroundImage =
-        "url(/img/background.27769967.png)";
-    },
-    leaveHomeStyles() {
-      document.querySelector("#usable-home").style.backgroundImage = "none";
-      document.querySelector("#usable-home").style.backgroundColor = "#fff";
-      document.querySelector(".navbar").style.backgroundImage =
-        "url(/img/background.27769967.png)";
-      document.querySelector(".navbar").style.backgroundSize = "cover";
-    }
   }
 };
 </script>

@@ -30,9 +30,8 @@ export default {
 
 <style scoped>
 #usable-home {
-  background-image: url("./assets/background.png");
-  background-size: cover;
-  display: block;
+    background-image: none;
+  background-color: #fff;
 }
 
 .container {
@@ -45,5 +44,9 @@ export default {
 .component-fade-enter, .component-fade-leave-to
 /* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+.navbar{
+  background-image: url('/img/background.27769967.png');
+  background-size: cover;
 }
 </style>
