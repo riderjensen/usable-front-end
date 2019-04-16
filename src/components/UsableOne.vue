@@ -12,6 +12,9 @@
               <p>User Browser: {{item.initInformation.browserType}}</p>
               <p>User Browser Height: {{item.initInformation.windowHeight}}px</p>
               <p>User Browser Width: {{item.initInformation.windowWidth}}px</p>
+              <br />
+              <p>Question presented to the user: {{item.questionsAnswered.question}}</p>
+              <p>User answer: {{item.questionsAnswered.answer}}</p>
             </div>
           </v-card-title>
         </v-card>
