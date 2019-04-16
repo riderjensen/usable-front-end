@@ -38,7 +38,7 @@
 
             <v-card-text
               class="text-xs-center"
-            >Click the code below!</v-card-text>
+            >Click the code below! Then paste it into the console of the page where you are monitoring users. Also make sure that your test is removed from the page before you go to it or else it will track you.</v-card-text>
 
             <v-text-field @click="copyCode" v-model="codeSnippet" class="ma-3" color="cyan"></v-text-field>
             <p v-if="copied" class="text-xs-center title pb-4">COPIED!</p>
