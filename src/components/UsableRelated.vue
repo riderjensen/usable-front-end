@@ -21,10 +21,8 @@
         >SUBMIT TASKS</v-btn>
         <br />
         <v-list light>
-          <p>List of tests</p>
           <li v-for="(task, i) in testArray" :key="task">
             <p><router-link :to="testArray[i]">{{testArray[i]}}</router-link></p>
-
           </li>
         </v-list>
       </v-flex>
