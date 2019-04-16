@@ -23,7 +23,9 @@
         <v-list light>
           <p>List of tests</p>
           <li v-for="(task, i) in testArray" :key="task">
-            <p @click="openModal(testArray[i])">{{testArray[i]}}</p>
+            <!-- <p @click="openModal(testArray[i])">{{testArray[i]}}</p> -->
+            <p><router-link :to="testArray[i]">{{testArray[i]}}</router-link></p>
+
           </li>
         </v-list>
       </v-flex>
