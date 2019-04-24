@@ -18,7 +18,7 @@
           color="cyan"
           type="submit"
           @click="submitForm()"
-        >SUBMIT TASKS</v-btn>
+        >SEARCH</v-btn>
         <br />
         <v-list light>
           <li v-for="(task, i) in testArray" :key="task">
